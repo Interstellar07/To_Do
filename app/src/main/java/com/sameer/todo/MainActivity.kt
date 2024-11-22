@@ -15,12 +15,10 @@ class MainActivity : AppCompatActivity() {
         val rcv = findViewById<RecyclerView>(R.id.RCV)
         rcv.layoutManager = LinearLayoutManager(this)
         val data =ArrayList<DataClass>()
-        data.add(DataClass("test"))
-        data.add(DataClass("test1"))
-        data.add(DataClass("test2"))
-        data.add(DataClass("test3"))
-
-
+        data.add(DataClass("Sample Task"))
+        data.add(DataClass("Sample Task 2"))
+        data.add(DataClass("Sample Task 3"))
+        data.add(DataClass("Sample Task 4"))
         val adapter = TodoAdapter(data)
         rcv.adapter =adapter
 
